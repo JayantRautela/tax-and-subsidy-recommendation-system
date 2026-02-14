@@ -1,0 +1,101 @@
+[
+  {
+    "section": "80C",
+    "title": "Investment Deduction",
+    "eligibleOccupation": "All",
+    "maxDeduction": 150000,
+    "conditions": [
+      "Investment in ELSS",
+      "PPF contribution",
+      "LIC premium",
+      "Tuition fees",
+      "Home loan principal repayment"
+    ],
+    "benefitType": "Investment Deduction",
+    "description": "Allows deduction for eligible investments under Section 80C"
+  },
+
+  {
+    "section": "80D",
+    "title": "Health Insurance Deduction",
+    "eligibleOccupation": "All",
+    "maxDeduction": 25000,
+    "conditions": [
+      "Health insurance premium paid for self or family"
+    ],
+    "benefitType": "Insurance Deduction",
+    "description": "Tax deduction for health insurance premiums"
+  },
+
+  {
+    "section": "24B",
+    "title": "Home Loan Interest Deduction",
+    "eligibleOccupation": "All",
+    "maxDeduction": 200000,
+    "conditions": [
+      "Interest paid on home loan"
+    ],
+    "benefitType": "Housing Deduction",
+    "description": "Deduction on interest paid for housing loan"
+  },
+
+  {
+    "section": "80E",
+    "title": "Education Loan Deduction",
+    "eligibleOccupation": "All",
+    "maxDeduction": 9999999,
+    "conditions": [
+      "Interest paid on education loan"
+    ],
+    "benefitType": "Education Deduction",
+    "description": "Full deduction on education loan interest"
+  },
+
+  {
+    "section": "80TTA",
+    "title": "Savings Account Interest",
+    "eligibleOccupation": "All",
+    "maxDeduction": 10000,
+    "conditions": [
+      "Interest earned from savings account"
+    ],
+    "benefitType": "Interest Deduction",
+    "description": "Deduction on savings account interest income"
+  },
+
+  {
+    "section": "HRA",
+    "title": "House Rent Allowance",
+    "eligibleOccupation": "Salaried",
+    "maxDeduction": 9999999,
+    "conditions": [
+      "Rent paid",
+      "Receiving HRA in salary"
+    ],
+    "benefitType": "Salary Allowance",
+    "description": "Tax exemption for house rent allowance"
+  },
+
+  {
+    "deductions": [
+      {
+        "section": "80C",
+        "title": "Investment Deduction",
+        "eligibleOccupation": "All",
+        "maxDeduction": 150000
+      },
+      {
+        "section": "80D",
+        "title": "Health Insurance Deduction",
+        "eligibleOccupation": "All",
+        "maxDeduction": 25000
+      },
+      {
+        "section": "24B",
+        "title": "Home Loan Interest",
+        "eligibleOccupation": "All",
+        "maxDeduction": 200000
+      }
+    ]
+  }
+]
