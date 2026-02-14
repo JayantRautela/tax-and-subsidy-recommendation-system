@@ -14,7 +14,6 @@
     "benefitType": "Investment Deduction",
     "description": "Allows deduction for eligible investments under Section 80C"
   },
-
   {
     "section": "80D",
     "title": "Health Insurance Deduction",
@@ -26,7 +25,6 @@
     "benefitType": "Insurance Deduction",
     "description": "Tax deduction for health insurance premiums"
   },
-
   {
     "section": "24B",
     "title": "Home Loan Interest Deduction",
@@ -36,9 +34,8 @@
       "Interest paid on home loan"
     ],
     "benefitType": "Housing Deduction",
-    "description": "Deduction on interest paid for housing loan"
+    "description": "Deduction on interest paid for home loan"
   },
-
   {
     "section": "80E",
     "title": "Education Loan Deduction",
@@ -50,7 +47,6 @@
     "benefitType": "Education Deduction",
     "description": "Full deduction on education loan interest"
   },
-
   {
     "section": "80TTA",
     "title": "Savings Account Interest",
@@ -62,7 +58,6 @@
     "benefitType": "Interest Deduction",
     "description": "Deduction on savings account interest income"
   },
-
   {
     "section": "HRA",
     "title": "House Rent Allowance",
@@ -74,28 +69,5 @@
     ],
     "benefitType": "Salary Allowance",
     "description": "Tax exemption for house rent allowance"
-  },
-
-  {
-    "deductions": [
-      {
-        "section": "80C",
-        "title": "Investment Deduction",
-        "eligibleOccupation": "All",
-        "maxDeduction": 150000
-      },
-      {
-        "section": "80D",
-        "title": "Health Insurance Deduction",
-        "eligibleOccupation": "All",
-        "maxDeduction": 25000
-      },
-      {
-        "section": "24B",
-        "title": "Home Loan Interest",
-        "eligibleOccupation": "All",
-        "maxDeduction": 200000
-      }
-    ]
   }
 ]
