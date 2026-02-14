@@ -22,6 +22,7 @@ export interface TaxRule {
 export interface UserTaxProfile {
   income: number;
   occupation: string;
+  agriculturalIncome?: number;
   investment80C?: number;
   healthInsurance?: number;
   homeLoanInterest?: number;
