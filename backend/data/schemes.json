@@ -1,0 +1,457 @@
+[
+  {
+    "id": "PMKISAN",
+    "name": "PM-Kisan Samman Nidhi",
+    "benefitType": "Subsidy",
+    "benefit": "₹6000 per year financial assistance",
+    "description": "Income support for small and marginal farmers",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Land Ownership Documents",
+      "Bank Account Passbook",
+      "Income Certificate"
+    ],
+    "eligibilityRules": [
+      { "field": "occupation", "operator": "equals", "value": "Farmer" },
+      { "field": "income", "operator": "lessThanOrEqual", "value": 200000 },
+      { "field": "landSize", "operator": "lessThanOrEqual", "value": 2 }
+    ]
+  },
+  {
+    "id": "SCHOLARSHIP",
+    "name": "National Scholarship Scheme",
+    "benefitType": "Scholarship",
+    "benefit": "Financial aid for students",
+    "description": "Support for economically weaker students",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Student ID Card",
+      "Previous Academic Marksheet",
+      "Bank Account Details"
+    ],
+    "eligibilityRules": [
+      { "field": "occupation", "operator": "equals", "value": "Student" },
+      { "field": "income", "operator": "lessThanOrEqual", "value": 300000 }
+    ]
+  },
+  {
+    "id": "PMAY_URBAN",
+    "name": "Pradhan Mantri Awas Yojana (Urban)",
+    "benefitType": "Subsidy",
+    "benefit": "Interest subsidy on home loans",
+    "description": "Affordable housing scheme for urban poor",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Property Documents",
+      "Bank Loan Sanction Letter",
+      "Residence Proof"
+    ],
+    "eligibilityRules": [
+      { "field": "annualIncome", "operator": "lessThanOrEqual", "value": 1800000 },
+      { "field": "residenceType", "operator": "equals", "value": "Urban" }
+    ]
+  },
+  {
+    "id": "PMAY_GRAMIN",
+    "name": "Pradhan Mantri Awas Yojana (Gramin)",
+    "benefitType": "Subsidy",
+    "benefit": "Financial assistance for rural housing",
+    "description": "Housing support for rural poor families",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Ration Card",
+      "Land Documents",
+      "Bank Account Details"
+    ],
+    "eligibilityRules": [
+      { "field": "annualIncome", "operator": "lessThanOrEqual", "value": 120000 },
+      { "field": "residenceType", "operator": "equals", "value": "Rural" }
+    ]
+  },
+  {
+    "id": "PMEGP",
+    "name": "Prime Minister Employment Generation Programme",
+    "benefitType": "Subsidy",
+    "benefit": "Up to 35% subsidy on project cost",
+    "description": "Support for setting up micro enterprises",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Project Report",
+      "Bank Loan Application",
+      "Caste Certificate (if applicable)",
+      "Educational Qualification Certificate"
+    ],
+    "eligibilityRules": [
+      { "field": "occupation", "operator": "equals", "value": "Entrepreneur" },
+      { "field": "age", "operator": "greaterThanOrEqual", "value": 18 }
+    ]
+  },
+  {
+    "id": "MUDRA",
+    "name": "Pradhan Mantri Mudra Yojana",
+    "benefitType": "Loan",
+    "benefit": "Collateral-free loans up to ₹10 lakh",
+    "description": "Financial support for small businesses",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Business Registration Proof",
+      "Bank Statements",
+      "Address Proof"
+    ],
+    "eligibilityRules": [
+      { "field": "occupation", "operator": "equals", "value": "Business" }
+    ]
+  },
+  {
+    "id": "KCC",
+    "name": "Kisan Credit Card Scheme",
+    "benefitType": "Subsidy",
+    "benefit": "Low interest crop loans",
+    "description": "Credit access for farmers",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Land Documents",
+      "Bank Account Details",
+      "Passport Size Photo"
+    ],
+    "eligibilityRules": [
+      { "field": "occupation", "operator": "equals", "value": "Farmer" }
+    ]
+  },
+  {
+    "id": "AYUSHMAN",
+    "name": "Ayushman Bharat Yojana",
+    "benefitType": "Insurance",
+    "benefit": "Health coverage up to ₹5 lakh per year",
+    "description": "Health insurance for low-income families",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Ration Card",
+      "Income Certificate",
+      "Family ID Proof"
+    ],
+    "eligibilityRules": [
+      { "field": "income", "operator": "lessThanOrEqual", "value": 500000 }
+    ]
+  },
+  {
+    "id": "UJJWALA",
+    "name": "Pradhan Mantri Ujjwala Yojana",
+    "benefitType": "Subsidy",
+    "benefit": "Free LPG connection",
+    "description": "Clean cooking fuel for women in poor households",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "BPL Ration Card",
+      "Bank Account Details",
+      "Passport Size Photo"
+    ],
+    "eligibilityRules": [
+      { "field": "gender", "operator": "equals", "value": "Female" },
+      { "field": "income", "operator": "lessThanOrEqual", "value": 200000 }
+    ]
+  },
+
+  {
+    "id": "OLD_AGE_PENSION",
+    "name": "Indira Gandhi National Old Age Pension Scheme",
+    "benefitType": "Pension",
+    "benefit": "Monthly pension for elderly citizens",
+    "description": "Financial assistance for senior citizens",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Age Proof",
+      "Income Certificate",
+      "Bank Account Details",
+      "BPL Card"
+    ],
+    "eligibilityRules": [
+      { "field": "age", "operator": "greaterThanOrEqual", "value": 60 },
+      { "field": "income", "operator": "lessThanOrEqual", "value": 100000 }
+    ]
+  },
+  {
+    "id": "STANDUP_INDIA",
+    "name": "Stand Up India Scheme",
+    "benefitType": "Loan",
+    "benefit": "Bank loans for SC/ST and Women entrepreneurs",
+    "description": "Promotes entrepreneurship among women and SC/ST",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Caste Certificate",
+      "Business Plan",
+      "Bank Documents"
+    ],
+    "eligibilityRules": [
+      { "field": "age", "operator": "greaterThanOrEqual", "value": 18 }
+    ]
+  },
+  {
+    "id": "ATAL_PENSION",
+    "name": "Atal Pension Yojana",
+    "benefitType": "Pension",
+    "benefit": "Guaranteed monthly pension after 60",
+    "description": "Pension scheme for unorganized sector workers",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Bank Account Details",
+      "Mobile Number"
+    ],
+    "eligibilityRules": [
+      { "field": "age", "operator": "greaterThanOrEqual", "value": 18 },
+      { "field": "age", "operator": "lessThanOrEqual", "value": 40 }
+    ]
+  },
+  {
+    "id": "SUKANYA",
+    "name": "Sukanya Samriddhi Yojana",
+    "benefitType": "Savings",
+    "benefit": "High interest savings for girl child",
+    "description": "Savings scheme for girl child future security",
+    "documentsRequired": [
+      "Birth Certificate",
+      "Aadhaar Card",
+      "Parent ID"
+    ],
+    "eligibilityRules": [
+      { "field": "gender", "operator": "equals", "value": "Female" },
+      { "field": "age", "operator": "lessThanOrEqual", "value": 10 }
+    ]
+  },
+  {
+    "id": "NRLM",
+    "name": "National Rural Livelihood Mission",
+    "benefitType": "Subsidy",
+    "benefit": "Financial assistance for SHGs",
+    "description": "Empowers rural poor through self-help groups",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "SHG Registration",
+      "Income Certificate"
+    ],
+    "eligibilityRules": [
+      { "field": "residenceType", "operator": "equals", "value": "Rural" }
+    ]
+  },
+  {
+    "id": "DIGITAL_INDIA",
+    "name": "Digital India Internship Scheme",
+    "benefitType": "Stipend",
+    "benefit": "Monthly internship stipend",
+    "description": "Internship for students in digital governance",
+    "documentsRequired": [
+      "College ID",
+      "Resume",
+      "Academic Marksheet"
+    ],
+    "eligibilityRules": [
+      { "field": "occupation", "operator": "equals", "value": "Student" }
+    ]
+  },
+  {
+    "id": "PMFBY",
+    "name": "Pradhan Mantri Fasal Bima Yojana",
+    "benefitType": "Insurance",
+    "benefit": "Crop insurance coverage",
+    "description": "Insurance against crop failure",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Land Records",
+      "Bank Details"
+    ],
+    "eligibilityRules": [
+      { "field": "occupation", "operator": "equals", "value": "Farmer" }
+    ]
+  },
+  {
+    "id": "UDAN",
+    "name": "UDAN Scheme",
+    "benefitType": "Subsidy",
+    "benefit": "Affordable regional air travel",
+    "description": "Improves regional air connectivity",
+    "documentsRequired": ["Aadhaar Card"],
+    "eligibilityRules": []
+  },
+  {
+    "id": "NSAP_WIDOW",
+    "name": "Indira Gandhi Widow Pension Scheme",
+    "benefitType": "Pension",
+    "benefit": "Monthly pension for widows",
+    "description": "Financial assistance to widowed women",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Husband Death Certificate",
+      "Income Certificate"
+    ],
+    "eligibilityRules": [
+      { "field": "gender", "operator": "equals", "value": "Female" }
+    ]
+  },
+  {
+    "id": "PMJJBY",
+    "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana",
+    "benefitType": "Insurance",
+    "benefit": "Life insurance coverage",
+    "description": "Affordable life insurance scheme",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Bank Account"
+    ],
+    "eligibilityRules": [
+      { "field": "age", "operator": "greaterThanOrEqual", "value": 18 }
+    ]
+  },
+  {
+    "id": "PMSBY",
+    "name": "Pradhan Mantri Suraksha Bima Yojana",
+    "benefitType": "Insurance",
+    "benefit": "Accidental insurance coverage",
+    "description": "Low-cost accident insurance",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Bank Account"
+    ],
+    "eligibilityRules": [
+      { "field": "age", "operator": "greaterThanOrEqual", "value": 18 }
+    ]
+  },
+  {
+    "id": "PMKVY",
+    "name": "Pradhan Mantri Kaushal Vikas Yojana",
+    "benefitType": "Skill Training",
+    "benefit": "Free skill development training",
+    "description": "Skill training and certification",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Education Certificate"
+    ],
+    "eligibilityRules": []
+  },
+  {
+    "id": "Beti_Bachao",
+    "name": "Beti Bachao Beti Padhao",
+    "benefitType": "Subsidy",
+    "benefit": "Support for girl child education",
+    "description": "Promotes education of girl child",
+    "documentsRequired": [
+      "Birth Certificate",
+      "Aadhaar Card"
+    ],
+    "eligibilityRules": [
+      { "field": "gender", "operator": "equals", "value": "Female" }
+    ]
+  },
+  {
+    "id": "PM_SVANidhi",
+    "name": "PM Street Vendor’s AtmaNirbhar Nidhi",
+    "benefitType": "Loan",
+    "benefit": "Working capital loan for street vendors",
+    "description": "Financial support to street vendors",
+    "documentsRequired": [
+      "Vendor Certificate",
+      "Aadhaar Card",
+      "Bank Account"
+    ],
+    "eligibilityRules": [
+      { "field": "occupation", "operator": "equals", "value": "Vendor" }
+    ]
+  },
+  {
+    "id": "PMEGP_WOMEN",
+    "name": "PMEGP Women Subsidy",
+    "benefitType": "Subsidy",
+    "benefit": "Higher subsidy for women entrepreneurs",
+    "description": "Promotes women entrepreneurship",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Business Plan"
+    ],
+    "eligibilityRules": [
+      { "field": "gender", "operator": "equals", "value": "Female" }
+    ]
+  },
+  {
+    "id": "NSP_SC",
+    "name": "SC/ST Post Matric Scholarship",
+    "benefitType": "Scholarship",
+    "benefit": "Financial aid for SC/ST students",
+    "description": "Education support for SC/ST category",
+    "documentsRequired": [
+      "Caste Certificate",
+      "Income Certificate",
+      "Academic Records"
+    ],
+    "eligibilityRules": [
+      { "field": "occupation", "operator": "equals", "value": "Student" }
+    ]
+  },
+  {
+    "id": "PMUY",
+    "name": "Pradhan Mantri Ujala Yojana",
+    "benefitType": "Subsidy",
+    "benefit": "Subsidized LED bulbs",
+    "description": "Energy-efficient lighting support",
+    "documentsRequired": ["Electricity Bill"],
+    "eligibilityRules": []
+  },
+  {
+    "id": "PMKSY",
+    "name": "Pradhan Mantri Krishi Sinchai Yojana",
+    "benefitType": "Subsidy",
+    "benefit": "Irrigation subsidy",
+    "description": "Supports irrigation infrastructure",
+    "documentsRequired": [
+      "Land Records",
+      "Aadhaar Card"
+    ],
+    "eligibilityRules": [
+      { "field": "occupation", "operator": "equals", "value": "Farmer" }
+    ]
+  },
+  {
+    "id": "EWS_HOUSING",
+    "name": "EWS Housing Scheme",
+    "benefitType": "Subsidy",
+    "benefit": "Housing assistance for EWS",
+    "description": "Housing support for economically weaker sections",
+    "documentsRequired": [
+      "Income Certificate",
+      "Aadhaar Card"
+    ],
+    "eligibilityRules": [
+      { "field": "annualIncome", "operator": "lessThanOrEqual", "value": 300000 }
+    ]
+  },
+  {
+    "id": "PMMSY",
+    "name": "Pradhan Mantri Matsya Sampada Yojana",
+    "benefitType": "Subsidy",
+    "benefit": "Support for fisheries sector",
+    "description": "Promotes fish farming and infrastructure",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Business Registration"
+    ],
+    "eligibilityRules": [
+      { "field": "occupation", "operator": "equals", "value": "Fisherman" }
+    ]
+  },
+  {
+    "id": "RTE",
+    "name": "Right to Education Admission",
+    "benefitType": "Education",
+    "benefit": "Free school education",
+    "description": "Free education for children under RTE Act",
+    "documentsRequired": [
+      "Birth Certificate",
+      "Income Certificate"
+    ],
+    "eligibilityRules": [
+      { "field": "age", "operator": "lessThanOrEqual", "value": 14 }
+    ]
+  }
+]
