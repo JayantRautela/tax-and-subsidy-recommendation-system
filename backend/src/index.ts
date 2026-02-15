@@ -18,3 +18,6 @@ app.use('/api/v1/subsidy', SubsidyRouter);
 app.listen(PORT, () => {
   console.log(`Server started at http://localhost:${PORT}`);
 })
+.on("error", (err) => {
+  console.error("Server error:", err);
+});
