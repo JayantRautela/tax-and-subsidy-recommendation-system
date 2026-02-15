@@ -1,8 +1,9 @@
 import { type Request, type Response } from "express";
 import { getSubsidyRecommendations } from "../utils/subsidy.js";
 import { type UserProfile } from "../types/schemeTypes.js";
+import { generateSchemeExplanation } from "../utils/ai/explainationService.js";
 
-export const recommendSubsidies = (
+export const recommendSubsidies = async (
   req: Request,
   res: Response
 ) => {
@@ -12,6 +13,10 @@ export const recommendSubsidies = (
     const user: UserProfile = req.body;
 
     const recommendations = getSubsidyRecommendations(user);
+
+    for (const scheme of recommendations) {
+      scheme.explanation = await generateSchemeExplanation(scheme, user) as string;
+    }
 
     res.status(200).json({
       success: true,

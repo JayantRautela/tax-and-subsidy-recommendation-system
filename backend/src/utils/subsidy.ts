@@ -8,6 +8,7 @@ interface SchemeMatchResult extends Scheme {
   matchScore: number;
   totalRules: number;
   matchedRules: number;
+  explanation: string;
 }
 
 export function getSubsidyRecommendations(
@@ -25,7 +26,8 @@ export function getSubsidyRecommendations(
         ...scheme,
         matchScore: 100,
         totalRules: 0,
-        matchedRules: 0
+        matchedRules: 0,
+        explanation: ""
       });
       return;
     }
@@ -50,7 +52,8 @@ export function getSubsidyRecommendations(
         ...scheme,
         matchScore: Math.round(matchScore),
         totalRules,
-        matchedRules
+        matchedRules,
+        explanation: ""
       });
     }
   });

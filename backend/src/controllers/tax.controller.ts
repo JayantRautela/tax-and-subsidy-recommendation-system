@@ -3,8 +3,9 @@ import { compareRegimes } from "../utils/regimeComparision.js";
 import { calculateTax } from "../utils/calculateTax.js";
 import { calculateDeductions } from "../utils/deductionCalculator.js";
 import { type UserTaxProfile } from "../types/taxTypes.js";
+import { generateTaxAdvice } from "../utils/ai/taxAdvisory.js";
 
-export const compareTaxController = (
+export const compareTaxController = async (
   req: Request,
   res: Response
 ) => {
@@ -13,9 +14,12 @@ export const compareTaxController = (
 
     const result = compareRegimes(user);
 
+    const advice = await generateTaxAdvice(result, user);
+
     res.status(200).json({
       success: true,
-      data: result
+      data: result,
+      advice: advice
     });
 
   } catch (error) {
