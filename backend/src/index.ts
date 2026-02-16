@@ -4,6 +4,7 @@ dotenv.config();
 import cors from "cors";
 import TaxRouter from "./routes/tax.routes.js";
 import SubsidyRouter from "./routes/subsidy.routes.js";
+import ChatRouter from "./routes/chat.routes.js";
 
 const app = express();
 
@@ -14,6 +15,7 @@ const PORT = process.env.PORT;
 
 app.use('/api/v1/tax', TaxRouter);
 app.use('/api/v1/subsidy', SubsidyRouter);
+app.use('/api/v1/chat', ChatRouter);
 
 app.listen(PORT, () => {
   console.log(`Server started at http://localhost:${PORT}`);
