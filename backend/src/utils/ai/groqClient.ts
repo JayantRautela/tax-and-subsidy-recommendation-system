@@ -19,3 +19,17 @@ export async function callGroqAI(
 
   return response?.choices[0]?.message.content;
 }
+
+export async function streamGroqAI(
+  messages: { role: "system" | "user"; content: string }[]
+) {
+
+  const stream = await groq.chat.completions.create({
+    model: "llama3-70b-8192",
+    messages,
+    temperature: 0.2,
+    stream: true
+  });
+
+  return stream;
+}
