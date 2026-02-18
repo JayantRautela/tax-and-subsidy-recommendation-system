@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,15 +8,15 @@ const Navbar = () => {
       <div>
         <ul className="flex justify-center items-center gap-10 text-gray-500">
           <li className="nav-link">
-            <a href="">Tax</a>
+            <Link to="tax">Tax</Link>
           </li>
           <li>|</li>
           <li className="nav-link">
-            <a href="">Subsidy</a>
+            <Link to="subsidy">Subsidy</Link>
           </li>
           <li>|</li>
           <li className="nav-link">
-            <a href="">Chat</a>
+            <Link to="chat">Chat</Link>
           </li>
         </ul>
       </div>

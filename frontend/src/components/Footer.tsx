@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -6,15 +7,15 @@ const Footer = () => {
       {/* <div className='w-full'></div> */}
       <ul className="flex justify-center items-center gap-10 text-gray-500">
         <li className="nav-link">
-          <a href="">About</a>
+          <Link to="about">About</Link>
         </li>
         <li>|</li>
         <li className="nav-link">
-          <a href="">Privacy</a>
+          <Link to="privacy">Privacy</Link>
         </li>
         <li>|</li>
         <li className="nav-link">
-          <a href="https://github.com/JayantRautela/tax-and-subsidy-recommendation-system">Github</a>
+          <Link to="https://github.com/JayantRautela/tax-and-subsidy-recommendation-system" target="_blank">Github</Link>
         </li>
       </ul>
       <span>© {new Date().getFullYear()} Name</span>
