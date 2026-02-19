@@ -7,11 +7,11 @@ const Home = () => {
       <div>
         <h1 className='font-bold text-5xl mb-6'>Simplify Taxes & Government Schemes <br /> With AI-Powered Assistance 🇮🇳</h1>
         <p className='font-semibold text-2xl'>
-          Compare {" "}
+          {" "}
           <span className="text-blue-500">
           <Typewriter
-            words={["Tax Regimes", "Discover Eligible Scheme", "Chat In Your Language"]}
-            typingSpeed={150}
+            words={["Compare Tax Regimes", "Discover Eligible Scheme", "Chat In Your Language"]}
+            typingSpeed={100}
             deletingSpeed={50}
             delayBetweenWords={1000}
           />
